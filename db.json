@@ -4,17 +4,17 @@
             "id": "1",
             "name": "user1",
             "groups": ["1"],
-            "games": ["Wordle"],
+            "games": ["Wordle"]
         },
         {
             "id": "2",
             "name": "user2",
             "groups": ["1"],
-            "games": ["Wordle", "Connections"],
+            "games": ["Wordle", "Connections"]
         }
     ],
     "scores": [],
     "groups": [],
     "games": [],
-    "messages": [],
+    "messages": []
 }

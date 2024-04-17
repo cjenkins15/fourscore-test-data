@@ -1,19 +1,19 @@
 {
     "users": [
-      { "id": "000001", "name": "alan", "groups": ["00001"], "games": ["0001", "0002"] },
-      { "id": "000002", "name": "beatrice", "groups": ["00001", "00002"], "games": ["0001", "0002", "0003"] },
-      { "id": "000003", "name": "connor", "groups": ["00001"], "games": ["0001", "0002"] },
-      { "id": "000004", "name": "denice", "groups": ["00001"], "games": ["0001", "0002"] },
-      { "id": "000005", "name": "ellison", "groups": ["00003"], "games": ["0003"] }    
+      { "id": "000001", "name": "alan", "group_ids": ["00001"], "game_ids": ["0001", "0002"] },
+      { "id": "000002", "name": "beatrice", "group_ids": ["00001", "00002"], "game_ids": ["0001", "0002", "0003"] },
+      { "id": "000003", "name": "connor", "group_ids": ["00001"], "game_ids": ["0001", "0002"] },
+      { "id": "000004", "name": "denice", "group_ids": ["00001"], "game_ids": ["0001", "0002"] },
+      { "id": "000005", "name": "ellison", "group_ids": ["00003"], "game_ids": ["0003"] }    
     ],
     "scores": [
-      {"timestamp": "2024-04-10T13:00:30.000Z", "user_id": "000001", "group": "00001", "game":"0001", "score": 6, "score_string": "6/6*", "message": "posted a score for Wordle #1004", "guesses": "⬛⬛🟨⬛🟨\n⬛🟨🟨🟨⬛\n🟨⬛⬛🟨🟨\n⬛🟨⬛🟨🟨\n🟩🟩🟩⬛⬛\n🟩🟩🟩🟩🟩"},
-      {"timestamp": "2024-04-10T13:00:45.000Z", "user_id": "000002", "group": "00001", "game":"0001", "score": 4, "score_string": "4/6", "message": "posted a score for Wordle #1004", "guesses": "⬛🟨🟨🟨⬛\n🟨⬛⬛🟨🟨\n⬛🟨⬛🟨🟨\n🟩🟩🟩⬛⬛\n🟩🟩🟩🟩🟩"}
+      {"timestamp": "2024-04-10T13:00:30.000Z", "user_id": "000001", "group_id": "00001", "game_id":"0001", "score": 6, "score_string": "6/6*", "message": "posted a score for Wordle #1004", "guesses": "⬛⬛🟨⬛🟨\n⬛🟨🟨🟨⬛\n🟨⬛⬛🟨🟨\n⬛🟨⬛🟨🟨\n🟩🟩🟩⬛⬛\n🟩🟩🟩🟩🟩"},
+      {"timestamp": "2024-04-10T13:00:45.000Z", "user_id": "000002", "group_id": "00001", "game_id":"0001", "score": 4, "score_string": "5/6", "message": "posted a score for Wordle #1004", "guesses": "⬛🟨🟨🟨⬛\n🟨⬛⬛🟨🟨\n⬛🟨⬛🟨🟨\n🟩🟩🟩⬛⬛\n🟩🟩🟩🟩🟩"}
     ],
     "groups": [
-      { "id": "00001", "users": ["000001", "000002", "000003", "000004"], "games": ["0001", "0002"] },
-      { "id": "00002", "users": ["000002"], "games": ["0003"] },
-      { "id": "00003", "users": ["000005"], "games": ["0003"] }
+      { "id": "00001", "name": "Wordle/Connection Group!", "user_ids": ["000001", "000002", "000003", "000004"], "game_ids": ["0001", "0002"] },
+      { "id": "00002", "name": "Beatrice's Mini Group", "user_ids": ["000002"], "game_ids": ["0003"] },
+      { "id": "00003", "name": "Ellison's Very Mini Group", "user_ids": ["000005"], "game_ids": ["0003"] }
     ],
     "games": [
       { "id": "0001", "name": "NYT Wordle" , "regexs": ["^Wordle (?<id>[\\\\d,]+) (?<score>[\\\\dX])\\\\/6(?<hard>\\\\*?)\n\n(?<guesses>[\\\\s\\\\S]*)$"] },
@@ -21,9 +21,9 @@
       { "id": "0003", "name": "NYT Mini", "regexs": ["^I solved the (?<date>[\\\\d\/]+?) New York Times Mini Crossword in (?<time>[:\\\\d]+)!"] }
     ],
     "messages": [
-      {"timestamp": "2024-04-10T13:00:00.000Z", "user_id": "000001", "group": "00001", "text": "Hey it's my first message!"},
-      {"timestamp": "2024-04-10T13:01:00.000Z", "user_id": "000002", "group": "00001", "text": "This is a neat app"},
-      {"timestamp": "2024-04-10T13:04:00.000Z", "user_id": "000003", "group": "00001", "text": "Hello!"},
-      {"timestamp": "2024-04-10T13:10:00.000Z", "user_id": "000005", "group": "00003", "text": "Guess I'm the only one here..."}
+      {"timestamp": "2024-04-10T13:00:00.000Z", "user_id": "000001", "group_id": "00001", "text": "Hey it's my first message!"},
+      {"timestamp": "2024-04-10T13:01:00.000Z", "user_id": "000002", "group_id": "00001", "text": "This is a neat app"},
+      {"timestamp": "2024-04-10T13:04:00.000Z", "user_id": "000003", "group_id": "00001", "text": "Hello!"},
+      {"timestamp": "2024-04-10T13:10:00.000Z", "user_id": "000005", "group_id": "00003", "text": "Guess I'm the only one here..."}
     ]
   }

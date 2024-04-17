@@ -16,9 +16,9 @@
       { "id": "00003", "users": ["000005"], "games": ["0003"] }
     ],
     "games": [
-      { "id": "0001", "name": "NYT Wordle" , "regexs": ["^Wordle (?<id>[\\d,]+) (?<score>[\\dX])\/6(?<hard>\\*?)\n\n(?<guesses>[\\s\\S]*)$"] },
-      { "id": "0002", "name": "NYT Connections", "regexs": ["^Connections\\s*?Puzzle #(?<id>\\d+)\n(?<guesses>[\\s\\S]+)"] },
-      { "id": "0003", "name": "NYT Mini", "regexs": ["^I solved the (?<date>[\\d\/]+?) New York Times Mini Crossword in (?<time>[:\\d]+)!"] }
+      { "id": "0001", "name": "NYT Wordle" , "regexs": ["^Wordle (?<id>[\\\\d,]+) (?<score>[\\\\dX])\\\\/6(?<hard>\\\\*?)\n\n(?<guesses>[\\\\s\\\\S]*)$"] },
+      { "id": "0002", "name": "NYT Connections", "regexs": ["^Connections\\\\s*?Puzzle #(?<id>\\\\d+)\n(?<guesses>[\\\\s\\\\S]+)"] },
+      { "id": "0003", "name": "NYT Mini", "regexs": ["^I solved the (?<date>[\\\\d\/]+?) New York Times Mini Crossword in (?<time>[:\\\\d]+)!"] }
     ],
     "messages": [
       {"timestamp": "2024-04-10T13:00:00.000Z", "user_id": "000001", "group": "00001", "text": "Hey it's my first message!"},

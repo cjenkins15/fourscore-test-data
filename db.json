@@ -7,8 +7,8 @@
       { "id": "000005", "name": "ellison", "group_ids": ["00003"], "game_ids": ["0003"] }    
     ],
     "scores": [
-      {"timestamp": "2024-04-10T13:00:30.000Z", "user_id": "000001", "group_id": "00001", "game_id":"0001", "score": 6, "score_string": "6/6*", "message": "posted a score for Wordle #1004", "guesses": "⬛⬛🟨⬛🟨\n⬛🟨🟨🟨⬛\n🟨⬛⬛🟨🟨\n⬛🟨⬛🟨🟨\n🟩🟩🟩⬛⬛\n🟩🟩🟩🟩🟩"},
-      {"timestamp": "2024-04-10T13:00:45.000Z", "user_id": "000002", "group_id": "00001", "game_id":"0001", "score": 4, "score_string": "5/6", "message": "posted a score for Wordle #1004", "guesses": "⬛🟨🟨🟨⬛\n🟨⬛⬛🟨🟨\n⬛🟨⬛🟨🟨\n🟩🟩🟩⬛⬛\n🟩🟩🟩🟩🟩"}
+      {"timestamp": "2024-04-10T13:00:30.000Z", "user_id": "000001", "group_id": "00001", "game_id":"0001", "entry_id":"1004", "score": 6, "score_string": "6/6*", "message": "posted a score for Wordle #1004", "guesses": "⬛⬛🟨⬛🟨\n⬛🟨🟨🟨⬛\n🟨⬛⬛🟨🟨\n⬛🟨⬛🟨🟨\n🟩🟩🟩⬛⬛\n🟩🟩🟩🟩🟩", "misc_data": {"hard_mode": true}},
+      {"timestamp": "2024-04-10T13:00:45.000Z", "user_id": "000002", "group_id": "00001", "game_id":"0001", "entry_id":"1004", "score": 4, "score_string": "5/6", "message": "posted a score for Wordle #1004", "guesses": "⬛🟨🟨🟨⬛\n🟨⬛⬛🟨🟨\n⬛🟨⬛🟨🟨\n🟩🟩🟩⬛⬛\n🟩🟩🟩🟩🟩", "misc_data": {"hard_mode": false}}
     ],
     "groups": [
       { "id": "00001", "name": "Wordle/Connection Group!", "user_ids": ["000001", "000002", "000003", "000004"], "game_ids": ["0001", "0002"] },
@@ -16,9 +16,9 @@
       { "id": "00003", "name": "Ellison's Very Mini Group", "user_ids": ["000005"], "game_ids": ["0003"] }
     ],
     "games": [
-      { "id": "0001", "name": "NYT Wordle" , "regexs": ["^Wordle (?<id>[\\\\d,]+) (?<score>[\\\\dX])\\\\/6(?<hard>\\\\*?)\n\n(?<guesses>[\\\\s\\\\S]*)$"], "url": "https://www.nytimes.com/games/wordle" },
-      { "id": "0002", "name": "NYT Connections", "regexs": ["^Connections\\\\s*?Puzzle #(?<id>\\\\d+)\n(?<guesses>[\\\\s\\\\S]+)"], "url": "https://www.nytimes.com/games/connections" },
-      { "id": "0003", "name": "NYT Mini", "regexs": ["^I solved the (?<date>[\\\\d\/]+?) New York Times Mini Crossword in (?<time>[:\\\\d]+)!"], "url": "https://www.nytimes.com/crosswords/game/mini" }
+      { "id": "0001", "name": "NYT Wordle", "score_units": "count", "high_score_good": false, "max_score": 6, "regexs": ["^Wordle (?<id>[\\\\d,]+) (?<score>[\\\\dX])\\\\/6(?<hard>\\\\*?)\n\n(?<guesses>[\\\\s\\\\S]*)$"], "url": "https://www.nytimes.com/games/wordle" },
+      { "id": "0002", "name": "NYT Connections", "score_units": "count", "high_score_good": false, "max_score": null, "regexs": ["^Connections\\\\s*?Puzzle #(?<id>\\\\d+)\n(?<guesses>[\\\\s\\\\S]+)"], "url": "https://www.nytimes.com/games/connections" },
+      { "id": "0003", "name": "NYT Mini", "score_units": "seconds", "high_score_good": false, "max_score": null, "regexs": ["^I solved the (?<date>[\\\\d\/]+?) New York Times Mini Crossword in (?<time>[:\\\\d]+)!"], "url": "https://www.nytimes.com/crosswords/game/mini" }
     ],
     "messages": [
       {"timestamp": "2024-04-10T13:00:00.000Z", "user_id": "000001", "group_id": "00001", "text": "Hey it's my first message!"},

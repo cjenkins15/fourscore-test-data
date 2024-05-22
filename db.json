@@ -23,9 +23,9 @@
       { "id": "00003", "name": "Ellison's Very Mini Group", "user_ids": ["000005"], "game_ids": ["0003"] }
     ],
     "games": [
-      { "id": "0001", "name": "NYT Wordle", "score_units": "count", "ref_id": "1000", "ref_date": "3/15/2024", "high_score_good": false, "max_score": 6, "regexs": ["^Wordle (?<id>[\\\\d,]+) (?<score>[\\\\dX])\\\\/6(?<hard>\\\\*?)\n\n(?<guesses>[\\\\s\\\\S]*)$"], "url": "https://www.nytimes.com/games/wordle" },
-      { "id": "0002", "name": "NYT Connections", "score_units": "count", "ref_id": "278", "ref_date": "3/15/2024", "high_score_good": false, "max_score": null, "regexs": ["^Connections\\\\s*?Puzzle #(?<id>\\\\d+)\n(?<guesses>[\\\\s\\\\S]+)"], "url": "https://www.nytimes.com/games/connections" },
-      { "id": "0003", "name": "NYT Mini", "score_units": "seconds", "ref_id": "3/15/2024", "ref_date": "3/15/2024", "high_score_good": false, "max_score": null, "regexs": ["^I solved the (?<date>[\\\\d\/]+?) New York Times Mini Crossword in (?<time>[:\\\\d]+)!"], "url": "https://www.nytimes.com/crosswords/game/mini" }
+      { "id": "0001", "name": "NYT Wordle", "score_units": "count", "ref_id": "1000", "ref_id_type": "count", "ref_date": "3/15/2024", "high_score_good": false, "max_score": 6, "regexs": ["^Wordle (?<id>[\\\\d,]+) (?<score>[\\\\dX])\\\\/6(?<hard>\\\\*?)\n\n(?<guesses>[\\\\s\\\\S]*)$"], "url": "https://www.nytimes.com/games/wordle" },
+      { "id": "0002", "name": "NYT Connections", "score_units": "count", "ref_id": "278", "ref_id_type": "count", "ref_date": "3/15/2024", "high_score_good": false, "max_score": null, "regexs": ["^Connections\\\\s*?Puzzle #(?<id>\\\\d+)\n(?<guesses>[\\\\s\\\\S]+)"], "url": "https://www.nytimes.com/games/connections" },
+      { "id": "0003", "name": "NYT Mini", "score_units": "seconds", "ref_id": "3/15/2024", "ref_id_type": "date", "ref_date": "3/15/2024", "high_score_good": false, "max_score": null, "regexs": ["^I solved the (?<date>[\\\\d\/]+?) New York Times Mini Crossword in (?<time>[:\\\\d]+)!"], "url": "https://www.nytimes.com/crosswords/game/mini" }
     ],
     "messages": [
       {"timestamp": "2024-04-10T13:00:00.000Z", "user_id": "000001", "group_id": "00001", "text": "Hey it's my first message!"},

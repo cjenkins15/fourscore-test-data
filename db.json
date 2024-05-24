@@ -28,9 +28,9 @@
       { "id": "0003", "name": "NYT Mini", "score_units": "seconds", "ref_id": "3/15/2024", "ref_id_type": "date", "ref_date": "3/15/2024", "high_score_good": false, "max_score": null, "regexs": ["^I solved the (?<date>[\\\\d\/]+?) New York Times Mini Crossword in (?<time>[:\\\\d]+)!"], "url": "https://www.nytimes.com/crosswords/game/mini" }
     ],
     "messages": [
-      {"timestamp": "2024-04-10T13:00:00.000Z", "user_id": "000001", "group_id": "00001", "text": "Hey it's my first message!"},
-      {"timestamp": "2024-04-10T13:01:00.000Z", "user_id": "000002", "group_id": "00001", "text": "This is a neat app"},
-      {"timestamp": "2024-04-10T13:04:00.000Z", "user_id": "000003", "group_id": "00001", "text": "Hello!"},
-      {"timestamp": "2024-04-10T13:10:00.000Z", "user_id": "000005", "group_id": "00003", "text": "Guess I'm the only one here..."}
+      {"timestamp": "2024-04-10T13:00:00.000Z", "user_id": "000001", "group_id": "00001", "entry_id": "00001", "text": "Hey it's my first message!"},
+      {"timestamp": "2024-04-10T13:01:00.000Z", "user_id": "000002", "group_id": "00001", "entry_id": "00002", "text": "This is a neat app"},
+      {"timestamp": "2024-04-10T13:04:00.000Z", "user_id": "000003", "group_id": "00001", "entry_id": "00003", "text": "Hello!"},
+      {"timestamp": "2024-04-10T13:10:00.000Z", "user_id": "000005", "group_id": "00003", "entry_id": "00004", "text": "Guess I'm the only one here..."}
     ]
   }
